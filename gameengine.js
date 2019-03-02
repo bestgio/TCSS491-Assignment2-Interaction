@@ -86,6 +86,7 @@ GameEngine.prototype.startInput = function () {
         if (e.code === "Digit3") that.choice = 3;
         if (e.code === "Digit4") that.choice = 4;
         if (e.code === "Digit5") that.choice = 5;
+        if (e.code === "Digit6") that.choice = 6;
         if (e.code === "KeyR") {
             that.clear = true;
             that.increment = that.initialIncrement;

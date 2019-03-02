@@ -114,7 +114,10 @@ Cell.prototype.update = function () {
             this.array = octagon.map(inner => inner.slice());
         } else if (this.game.choice == 5) {
             this.array = circleFire.map(inner => inner.slice());
+        } else if (this.game.choice == 6) {
+            fillArray(this.array);
         }
+
         this.game.choice = 0;
     }
 
@@ -486,7 +489,6 @@ AM.downloadAll(function () {
     gameEngine.width = width;
     gameEngine.height = height;
 
-    //fillArray(emptyBoard);
     gameEngine.addEntity(new Background(gameEngine));
     gameEngine.addEntity(new Cell(gameEngine, gosperGun));
 
