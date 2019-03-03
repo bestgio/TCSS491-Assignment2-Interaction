@@ -134,7 +134,7 @@ Cell.prototype.update = function () {
 
     // Handle next generation
     if (!this.game.paused) {
-        let i, j;
+        let i, j, k, l;
 
         let newArray = this.array.map(inner => inner.slice());
     
@@ -192,7 +192,6 @@ Cell.prototype.update = function () {
  * @param {Game board} array 
  */
 function fillArray(array) {
-    console.log(array.length);
     for (let i = 0; i < array.length; i++) {
         let row = array[i];
         for (let j = 0; j < row.length; j++) {
